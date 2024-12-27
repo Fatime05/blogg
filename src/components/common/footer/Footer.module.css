@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-size: 14px;
+}
+.heart {
+    color: blue;
+}
+@media(max-width:516px){
+    .container p{
+        font-size: 12px;
+    }
+}
+@media(max-width:443px){
+    .container p{
+        font-size: 11px;
+       
+    }
+    .container{
+        height: 45px;
+    }
+}
+@media(max-width:404px){
+    .container p{
+        font-size: 10px;
+       
+    }
+    .container{
+        height: 45px;
+    }
+}

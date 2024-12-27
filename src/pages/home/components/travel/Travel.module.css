@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    
+}
+.context{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 80px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.title h1{
+    font-family: Poppins, sans-serif;;
+    font-size:36px ;
+    font-weight: 600;
+}
+.title p{
+    font-family: Poppins, sans-serif;;
+    font-size:14px ;
+    font-weight: 300;
+    color: #777777;
+    text-align: center;
+}
+.item{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+.card{
+    display: flex;
+
+    gap: 20px;
+}
+.date{
+    position: relative;
+}
+.date img{
+    width: 194px;
+    height: 178px;
+    transition: transform 0.4s ease;
+}
+.date img:hover{
+    transform: scale(1.2);
+}
+.date button{
+    position: absolute;
+    border: none;
+    color: white;
+    background-color: black;
+    width: 76px;
+    height: 84px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: Poppins, sans-serif;
+    z-index: 1;
+    top: 0;
+    left:0;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 10px;
+}
+.text h2{
+    font-family: Poppins, sans-serif;;
+    font-size:18px ;
+    font-weight: 600;
+    color: #222222;
+}
+.text p{
+    font-family: Poppins, sans-serif;;
+    font-size:14px ;
+    font-weight: 300;
+    color: #777777;
+}
+.likcom{
+    display: flex;
+    justify-content: space-between;
+}
+@media(max-width:576px){
+    .title h1{
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .item{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media(max-width:447px){
+    .title h1{
+        font-size: 22px;
+        margin-top: 20px;
+    }
+}
+@media(max-width:414px){
+    .title h1{
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    .title p{
+        width: 310px;
+    }
+}

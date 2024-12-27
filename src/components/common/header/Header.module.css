@@ -1,0 +1,46 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 54px;
+
+}
+.context{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.navbar ul li a{
+    font-size: 14px;
+    font-family: Poppins, sans-serif;
+    font-weight:600 ;
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.navbar ul li a:hover{
+    color: #69b4fd;
+}
+.bar{
+    display: none;
+    font-size: 19px;
+}
+@media(max-width:1024px){
+    .navbar{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    
+}
